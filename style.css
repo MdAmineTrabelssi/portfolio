@@ -1,0 +1,170 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Inter',sans-serif;
+}
+
+body{
+background:#070d18;
+color:white;
+overflow-x:hidden;
+}
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+padding:25px 8%;
+background:rgba(7,13,24,.8);
+backdrop-filter:blur(15px);
+z-index:1000;
+}
+
+.logo{
+font-size:28px;
+font-weight:800;
+color:#00d4ff;
+}
+
+nav ul{
+display:flex;
+gap:30px;
+list-style:none;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+}
+
+header{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+h1{
+font-size:5rem;
+color:#00d4ff;
+}
+
+h2{
+margin:20px 0;
+font-weight:400;
+}
+
+header p{
+max-width:700px;
+color:#b0b8c5;
+}
+
+.buttons{
+margin-top:40px;
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.btn{
+background:#00d4ff;
+padding:15px 30px;
+border-radius:50px;
+text-decoration:none;
+color:black;
+font-weight:700;
+}
+
+.btn-outline{
+border:1px solid #00d4ff;
+padding:15px 30px;
+border-radius:50px;
+text-decoration:none;
+color:#00d4ff;
+}
+
+section{
+padding:100px 10%;
+}
+
+h3{
+font-size:2.5rem;
+margin-bottom:40px;
+color:#00d4ff;
+}
+
+.card{
+background:#101827;
+padding:30px;
+border-radius:20px;
+border:1px solid #1f2937;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+}
+
+.project{
+background:#101827;
+padding:25px;
+border-radius:20px;
+border:1px solid #1f2937;
+transition:.3s;
+}
+
+.project:hover{
+transform:translateY(-10px);
+border-color:#00d4ff;
+}
+
+.project h4{
+margin-bottom:10px;
+color:#00d4ff;
+}
+
+.project span{
+display:block;
+margin-top:15px;
+color:#8ca0b3;
+}
+
+.skills{
+display:flex;
+flex-wrap:wrap;
+gap:15px;
+}
+
+.skills span{
+background:#101827;
+padding:12px 20px;
+border-radius:30px;
+border:1px solid #1f2937;
+}
+
+.center{
+text-align:center;
+}
+
+footer{
+padding:30px;
+text-align:center;
+background:#101827;
+}
+
+#particles{
+position:fixed;
+width:100%;
+height:100%;
+background:
+radial-gradient(circle at 20% 20%,rgba(0,212,255,.15),transparent 20%),
+radial-gradient(circle at 80% 80%,rgba(0,212,255,.12),transparent 20%);
+z-index:-1;
+}
